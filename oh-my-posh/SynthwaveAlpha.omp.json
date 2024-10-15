@@ -27,10 +27,18 @@
           "foreground": "#241b30",
           "powerline_symbol": "\ue0b8",
           "properties": {
-            "style": "full"
+            "style": "folder",
+            "mapped_locations": {
+              "C:\\Dev\\Repos\\Github": "\uF09B",
+              "C:\\Dev\\Repos\\Github\\*": "\uF09B",
+              "C:\\Dev\\Repos": "\ue725",
+              "C:\\Dev\\Repos\\*": "\ue725",
+              "C:\\Dev\\": "\ueef4",
+              "C:\\Dev\\*": "\ueef4"
+            }
           },
           "style": "powerline",
-          "template": " {{ .Path }} ",
+          "template": " {{.Parent}}{{ .Path }} ",
           "type": "path"
         },
         {
